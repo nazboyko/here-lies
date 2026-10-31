@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Here Lies pipeline</title>
+<style>
+  @font-face { font-family: "Old Standard TT"; src: url(../../docs/fonts/old-standard-tt-latin-400-normal.woff2) format("woff2"); font-weight: 400; }
+  @font-face { font-family: "Old Standard TT"; src: url(../../docs/fonts/old-standard-tt-latin-700-normal.woff2) format("woff2"); font-weight: 700; }
+  @font-face { font-family: "Old Standard TT"; src: url(../../docs/fonts/old-standard-tt-latin-400-italic.woff2) format("woff2"); font-style: italic; }
+  @font-face { font-family: "UnifrakturMaguntia"; src: url(../../docs/fonts/unifrakturmaguntia-latin-400-normal.woff2) format("woff2"); }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #1e1828; color: #d9d3e4; font-family: "Old Standard TT", Georgia, serif; }
+  .frame { width: 1200px; padding: 40px 44px 44px; }
+  h1 { font-family: "UnifrakturMaguntia", serif; font-weight: 400; color: #e6e1d3; font-size: 44px; margin: 0 0 4px; }
+  .sub { color: #a49cb3; font-size: 19px; margin: 0 0 30px; }
+  .row { display: grid; grid-template-columns: 1fr 34px 1fr 34px 1fr 34px 1fr; align-items: stretch; }
+  .box { background: #e6e1d3; color: #24201c; padding: 16px 16px 14px; border-radius: 3px; box-shadow: 0 14px 30px -16px rgba(0,0,0,.7); }
+  .box.code { background: #f2a20c; color: #1b1305; }
+  .step { font-weight: 700; letter-spacing: .12em; font-size: 14px; text-transform: uppercase; }
+  .who { font-style: italic; font-size: 15px; color: #5e574e; margin: 2px 0 10px; }
+  .code .who { color: #4a2c05; }
+  .box p { margin: 0 0 8px; font-size: 16.5px; line-height: 1.4; }
+  .box code { font-family: ui-monospace, Menlo, monospace; font-size: 13.5px; background: rgba(36,32,28,.08); padding: 1px 4px; border-radius: 2px; }
+  .arrow { display: grid; place-items: center; color: #f2a20c; font-size: 28px; }
+  .under { display: grid; grid-template-columns: 1fr 34px 1fr 34px 1fr 34px 1fr; margin-top: 14px; font-size: 16px; color: #a49cb3; }
+  .under div { padding: 0 6px; }
+  .under b { color: #e6e1d3; }
+  .rule { margin-top: 28px; border-top: 1px solid #4a3f5a; padding-top: 16px; font-size: 20px; color: #e6e1d3; }
+  .rule span { color: #f2a20c; }
+</style>
+</head>
+<body>
+<div class="frame" id="frame">
+  <h1>How Here Lies works</h1>
+  <p class="sub">One photo, two calls to Gemma 4 on this laptop, and one check in plain Go code.</p>
+  <div class="row">
+    <div class="box">
+      <div class="step">1 · Look</div>
+      <div class="who">Gemma 4 sees the photo</div>
+      <p>Lists what it can see, injuries first.</p>
+      <p><code>d1 damage</code> charred surface<br><code>d2 wear</code> discoloration<br><code>d3 feature</code> square shape</p>
+    </div>
+    <div class="arrow">→</div>
+    <div class="box code">
+      <div class="step">2 · Gate</div>
+      <div class="who">plain code</div>
+      <p>A person, a pet or a healthy plant gets a still-alive notice. A photo it cannot make out gets a request for a better one.</p>
+      <p>Everything else goes on.</p>
+    </div>
+    <div class="arrow">→</div>
+    <div class="box">
+      <div class="step">3 · Write</div>
+      <div class="who">Gemma 4, text only</div>
+      <p>Never sees the photo. Writes the obituary from the list and cites an id for every physical sentence.</p>
+      <p><code>"cause": … "d1"</code></p>
+    </div>
+    <div class="arrow">→</div>
+    <div class="box code">
+      <div class="step">4 · Check</div>
+      <div class="who">plain code</div>
+      <p>Every cited id must exist. The cause must be damage or wear. Lengths must fit.</p>
+      <p>Fail: one rewrite, then repair from the list.</p>
+    </div>
+  </div>
+  <div class="rule">The model may invent a name. <span>It may not invent a scratch.</span></div>
+</div>
+</body>
+</html>

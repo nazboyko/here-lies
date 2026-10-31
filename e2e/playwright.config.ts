@@ -7,7 +7,10 @@ import { defineConfig } from "@playwright/test";
 const bin = "../bin/herelies";
 
 export default defineConfig({
-  testDir: "tests",
+  projects: [
+    { name: "e2e", testDir: "tests" },
+    { name: "shots", testDir: "shots" }, // images for the docs: make shots
+  ],
   outputDir: "out/test-results",
   timeout: 120_000,
   expect: { timeout: 60_000 },

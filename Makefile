@@ -1,6 +1,6 @@
 BIN := bin/herelies
 
-.PHONY: run build web test check live eval e2e clean
+.PHONY: run build web test live eval e2e shots clean
 
 run: build
 	./$(BIN)
@@ -31,7 +31,11 @@ eval:
 
 # Browser tests against the real server and the real model.
 e2e: build
-	cd e2e && npm ci && npx playwright install chromium && npx playwright test
+	cd e2e && npm ci && npx playwright install chromium && npx playwright test --project e2e
+
+# Real cards and screenshots for the README and the landing page, into e2e/out.
+shots: build
+	cd e2e && npx playwright test --project shots
 
 clean:
 	rm -rf bin web/dist/assets web/dist/index.html web/dist/favicon.svg e2e/out
