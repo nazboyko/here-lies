@@ -1,0 +1,327 @@
+{
+  "01-cracked-phone.jpg": {
+    "details": [
+      {
+        "text": "spiderweb cracks across screen",
+        "verdict": "true"
+      },
+      {
+        "text": "multiple surface scratches",
+        "verdict": "true"
+      },
+      {
+        "text": "general surface grime",
+        "verdict": "true"
+      },
+      {
+        "text": "black screen",
+        "verdict": "true"
+      },
+      {
+        "text": "red bottom bezel",
+        "verdict": "unsure"
+      }
+    ],
+    "note": "The red is the side frame; the front bezel is black."
+  },
+  "02-frayed-charger-cable.jpg": {
+    "details": [
+      {
+        "text": "torn section on cable",
+        "verdict": "true"
+      },
+      {
+        "text": "exposed inner material",
+        "verdict": "true"
+      },
+      {
+        "text": "dirt on cable",
+        "verdict": "true"
+      },
+      {
+        "text": "white outer casing",
+        "verdict": "true"
+      },
+      {
+        "text": "cable extending out",
+        "verdict": "true"
+      }
+    ],
+    "note": ""
+  },
+  "03-worn-out-shoes.jpg": {
+    "details": [
+      {
+        "text": "split sole on upper shoe",
+        "verdict": "true"
+      },
+      {
+        "text": "torn fabric on lower shoe",
+        "verdict": "true"
+      },
+      {
+        "text": "heavy discoloration on both shoes",
+        "verdict": "true"
+      },
+      {
+        "text": "fraying around shoe edges",
+        "verdict": "true"
+      },
+      {
+        "text": "dirt and stains visible",
+        "verdict": "true"
+      },
+      {
+        "text": "light brown canvas material",
+        "verdict": "unsure"
+      }
+    ],
+    "note": "The canvas is grey-beige; 'light brown' is a stretch."
+  },
+  "04-burnt-toast.jpg": {
+    "details": [
+      {
+        "text": "burnt surface on both slices",
+        "verdict": "true"
+      },
+      {
+        "text": "charred edges",
+        "verdict": "unsure"
+      },
+      {
+        "text": "discoloration on toast",
+        "verdict": "true"
+      },
+      {
+        "text": "golden brown crust",
+        "verdict": "true"
+      },
+      {
+        "text": "square shape",
+        "verdict": "true"
+      }
+    ],
+    "note": "The centres are charred; the crust edges are mostly golden."
+  },
+  "05-broken-mug.jpg": {
+    "details": [
+      {
+        "text": "crack on side",
+        "verdict": "true"
+      },
+      {
+        "text": "yellow line in crack",
+        "verdict": "true"
+      },
+      {
+        "text": "handwritten brown marking",
+        "verdict": "true"
+      },
+      {
+        "text": "white ceramic material",
+        "verdict": "true"
+      },
+      {
+        "text": "pouring spout",
+        "verdict": "false"
+      }
+    ],
+    "note": "It is a mug, not a creamer jug, and it has no spout. The 'yellow line' is a printed pattern that runs along the break."
+  },
+  "06-broken-drinking-glass.jpg": {
+    "details": [
+      {
+        "text": "cracked glass pieces",
+        "verdict": "true"
+      },
+      {
+        "text": "missing pieces",
+        "verdict": "true"
+      },
+      {
+        "text": "scratches on glass",
+        "verdict": "false"
+      },
+      {
+        "text": "clear glass material",
+        "verdict": "true"
+      },
+      {
+        "text": "faceted base",
+        "verdict": "true"
+      },
+      {
+        "text": "irregular rim",
+        "verdict": "true"
+      }
+    ],
+    "note": "It is a drinking glass, not a vase. No scratches are visible."
+  },
+  "07-collapsing-jack-o-lanterns.jpg": {
+    "details": [
+      {
+        "text": "rotting",
+        "verdict": "true"
+      },
+      {
+        "text": "dirt",
+        "verdict": "unsure"
+      },
+      {
+        "text": "orange color",
+        "verdict": "true"
+      },
+      {
+        "text": "jack-o'-lantern faces",
+        "verdict": "true"
+      },
+      {
+        "text": "stem on one pumpkin",
+        "verdict": "true"
+      }
+    ],
+    "note": "Rot is real (the small one has collapsed). Dirt on the pumpkins is not clear."
+  },
+  "08-burnt-light-bulb.jpg": {
+    "details": [
+      {
+        "text": "charred surface",
+        "verdict": "true"
+      },
+      {
+        "text": "darkened glass",
+        "verdict": "true"
+      },
+      {
+        "text": "discoloration on glass",
+        "verdict": "true"
+      },
+      {
+        "text": "dirt accumulation",
+        "verdict": "true"
+      },
+      {
+        "text": "metallic base",
+        "verdict": "true"
+      },
+      {
+        "text": "earthen tone glass",
+        "verdict": "true"
+      }
+    ],
+    "note": ""
+  },
+  "09-dead-succulent.jpg": {
+    "details": [
+      {
+        "text": "darkened and discolored leaves",
+        "verdict": "true"
+      },
+      {
+        "text": "soil and gravel residue",
+        "verdict": "true"
+      },
+      {
+        "text": "leaf discoloration",
+        "verdict": "true"
+      },
+      {
+        "text": "fleshy, rosette shape",
+        "verdict": "true"
+      },
+      {
+        "text": "pale green and brown leaves",
+        "verdict": "true"
+      },
+      {
+        "text": "terracotta pot",
+        "verdict": "true"
+      }
+    ],
+    "note": ""
+  },
+  "10-warped-cassette-adapter.jpg": {
+    "details": [
+      {
+        "text": "missing screw hole",
+        "verdict": "false"
+      },
+      {
+        "text": "scuffs on casing",
+        "verdict": "unsure"
+      },
+      {
+        "text": "black plastic casing",
+        "verdict": "true"
+      },
+      {
+        "text": "white printed text",
+        "verdict": "true"
+      },
+      {
+        "text": "circular cutouts",
+        "verdict": "true"
+      }
+    ],
+    "note": "The real injury is heat warping, which was missed. 'Missing screw hole' is not visible, and it became the cause of death."
+  },
+  "11-abandoned-umbrella.jpg": {
+    "details": [
+      {
+        "text": "torn fabric",
+        "verdict": "false"
+      },
+      {
+        "text": "dirt",
+        "verdict": "unsure"
+      },
+      {
+        "text": "bright red color",
+        "verdict": "true"
+      },
+      {
+        "text": "folded shape",
+        "verdict": "true"
+      }
+    ],
+    "note": "The umbrella is collapsed, but no tear is visible. 'Torn fabric' became the cause of death."
+  },
+  "16-intact-mug.jpg": {
+    "details": [
+      {
+        "text": "dark brown beans",
+        "verdict": "true"
+      },
+      {
+        "text": "scattered on wood",
+        "verdict": "true"
+      }
+    ],
+    "note": "The mug is intact, so natural causes is right; the obituary went to the coffee beans."
+  },
+  "17-blurry-unclear.jpg": {
+    "details": [
+      {
+        "text": "translucent upper bloom",
+        "verdict": "unsure"
+      },
+      {
+        "text": "soft, glowing appearance",
+        "verdict": "true"
+      },
+      {
+        "text": "green stem discoloration",
+        "verdict": "unsure"
+      },
+      {
+        "text": "bright yellow-green top",
+        "verdict": "true"
+      },
+      {
+        "text": "smooth, cylindrical stem",
+        "verdict": "true"
+      }
+    ],
+    "note": "Should have been refused as unclear. It is a blurred green glow, read as a plant."
+  }
+}

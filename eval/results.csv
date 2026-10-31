@@ -1,0 +1,18 @@
+photo,expected,subject,object,details,first-try pass,retried,fallback,soft mismatches,look s,write s,details_true (reviewed)
+01-cracked-phone.jpg,thing,thing,smartphone,5,yes,no,no,0,0.8,2.3,"4/5 (0 false, 1 unsure)"
+02-frayed-charger-cable.jpg,thing,thing,white cable,5,no,yes,no,1,0.8,5.0,5/5
+03-worn-out-shoes.jpg,thing,thing,pair of worn canvas shoes,6,yes,no,no,0,1.0,2.6,"5/6 (0 false, 1 unsure)"
+04-burnt-toast.jpg,thing,thing,slice of toast,5,yes,no,no,0,0.8,2.5,"4/5 (0 false, 1 unsure)"
+05-broken-mug.jpg,thing,thing,white creamer jug,5,yes,no,no,0,0.8,2.4,"4/5 (1 false, 0 unsure)"
+06-broken-drinking-glass.jpg,thing,thing,glass vase,6,yes,no,no,1,0.8,2.6,"5/6 (1 false, 0 unsure)"
+07-collapsing-jack-o-lanterns.jpg,thing,thing,carved pumpkins,5,yes,no,no,1,0.8,2.4,"4/5 (0 false, 1 unsure)"
+08-burnt-light-bulb.jpg,thing,thing,light bulb,6,yes,no,no,0,0.9,2.2,6/6
+09-dead-succulent.jpg,thing,thing,succulent plant in terracotta pot,6,yes,no,no,1,1.0,2.4,6/6
+10-warped-cassette-adapter.jpg,thing,thing,black electronic adapter,5,yes,no,no,0,0.8,2.3,"3/5 (1 false, 1 unsure)"
+11-abandoned-umbrella.jpg,thing,thing,red umbrella,4,yes,no,no,1,0.7,2.2,"2/4 (1 false, 1 unsure)"
+12-cat.jpg,animal,animal,–,notice: Still alive.,,,,,0.7,,
+13-dog.jpg,animal,animal,–,notice: Still alive.,,,,,0.7,,
+14-healthy-monstera.jpg,living_plant,living_plant,–,notice: This plant is still with us.,,,,,0.8,,
+15-person-portrait.jpg,person,person,–,notice: We don't write obituaries for people.,,,,,0.7,,
+16-intact-mug.jpg,thing,thing,poured roasted coffee beans,2,yes,no,no,0,0.6,2.0,2/2
+17-blurry-unclear.jpg,unclear,thing,bulbous plant structure,5,yes,no,no,0,1.0,2.4,"3/5 (0 false, 2 unsure)"

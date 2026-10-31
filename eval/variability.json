@@ -1,0 +1,709 @@
+[
+  {
+    "file": "01-cracked-phone.jpg",
+    "expected": "thing",
+    "publishable": true,
+    "subject": "thing",
+    "object": "smartphone",
+    "details": [
+      {
+        "id": "d1",
+        "text": "cracked screen",
+        "kind": "damage"
+      },
+      {
+        "id": "d2",
+        "text": "spiderweb cracks on display",
+        "kind": "damage"
+      },
+      {
+        "id": "d3",
+        "text": "scratches on back casing",
+        "kind": "wear"
+      },
+      {
+        "id": "d4",
+        "text": "black glossy screen",
+        "kind": "feature"
+      },
+      {
+        "id": "d5",
+        "text": "red bottom bezel",
+        "kind": "feature"
+      }
+    ],
+    "obituary": {
+      "name": "Miss Clara Digit-Phone",
+      "born": "est. 2021",
+      "died": "October 31, 2026",
+      "dateline": "Saturday, October 31, 2026",
+      "headline": "A fine device, recently offline",
+      "cause": {
+        "text": "Her service concluded when the display developed spiderweb cracks.",
+        "detail_id": "d2",
+        "natural": false
+      },
+      "life": [
+        {
+          "text": "Miss Digit-Phone held court upon the kitchen counter, her black glossy screen having seen countless blurry photos of the cat.",
+          "detail_ids": [
+            "d4",
+            "d3"
+          ]
+        },
+        {
+          "text": "She served the family well, often residing near the hearth, her red bottom bezel catching the light during evening news reports.",
+          "detail_ids": [
+            "d5"
+          ]
+        }
+      ],
+      "survived_by": "a pair of reading glasses and the wireless charging pad.",
+      "in_lieu_of_flowers": "please ensure the power cord is neatly coiled.",
+      "epitaph": "It saw the world, even when its face was fractured."
+    },
+    "checks": {
+      "first_try_pass": true,
+      "retried": false,
+      "fallback_used": false,
+      "soft_mismatches": 0,
+      "repaired": []
+    },
+    "drafts": [
+      {
+        "name": "Miss Clara Digit-Phone",
+        "born": "est. 2021",
+        "headline": "A fine device, recently offline.",
+        "cause_of_death": {
+          "text": "Her service concluded when the display developed spiderweb cracks.",
+          "detail_id": "d2"
+        },
+        "life": [
+          {
+            "text": "Miss Digit-Phone held court upon the kitchen counter, her black glossy screen having seen countless blurry photos of the cat (d4, d3).",
+            "detail_ids": [
+              "d4",
+              "d3"
+            ]
+          },
+          {
+            "text": "She served the family well, often residing near the hearth, her red bottom bezel catching the light during evening news reports (d5).",
+            "detail_ids": [
+              "d5"
+            ]
+          }
+        ],
+        "survived_by": "a pair of reading glasses and the wireless charging pad.",
+        "in_lieu_of_flowers": "In lieu of flowers, please ensure the power cord is neatly coiled.",
+        "epitaph": "It saw the world, even when its face was fractured."
+      }
+    ],
+    "timings": {
+      "look_ms": 466,
+      "write_ms": 2108,
+      "total_ms": 2574
+    }
+  },
+  {
+    "file": "01-cracked-phone.jpg",
+    "expected": "thing",
+    "publishable": true,
+    "subject": "thing",
+    "object": "smartphone",
+    "details": [
+      {
+        "id": "d1",
+        "text": "cracked screen",
+        "kind": "damage"
+      },
+      {
+        "id": "d2",
+        "text": "spiderweb cracks on display",
+        "kind": "damage"
+      },
+      {
+        "id": "d3",
+        "text": "scratches on back casing",
+        "kind": "wear"
+      },
+      {
+        "id": "d4",
+        "text": "black screen",
+        "kind": "feature"
+      },
+      {
+        "id": "d5",
+        "text": "red border",
+        "kind": "feature"
+      }
+    ],
+    "obituary": {
+      "name": "Miss Elara Digit-Screenworth",
+      "born": "est. 2018",
+      "died": "October 31, 2026",
+      "dateline": "Saturday, October 31, 2026",
+      "headline": "A Brief Service in the Modern Household",
+      "cause": {
+        "text": "She met her end when the display developed a spiderweb crack.",
+        "detail_id": "d2",
+        "natural": false
+      },
+      "life": [
+        {
+          "text": "Miss Digit-Screenworth provided constant illumination for the evening hours, though her casing bore several faint scratches from its time resting upon the pine mantelpiece.",
+          "detail_ids": [
+            "d3",
+            "d4"
+          ]
+        },
+        {
+          "text": "Its vibrant red border often provided a certain flair when placed beside the sugar bowl, and it reliably served as the holder for evening messages.",
+          "detail_ids": [
+            "d5"
+          ]
+        }
+      ],
+      "survived_by": "a charging cable of indeterminate length and a remote control with missing batteries",
+      "in_lieu_of_flowers": "we ask that the batteries in the wireless mouse be replaced.",
+      "epitaph": "It showed the world, then it dimmed. Quietly now."
+    },
+    "checks": {
+      "first_try_pass": true,
+      "retried": false,
+      "fallback_used": false,
+      "soft_mismatches": 0,
+      "repaired": []
+    },
+    "drafts": [
+      {
+        "name": "Miss Elara Digit-Screenworth",
+        "born": "est. 2018",
+        "headline": "A Brief Service in the Modern Household",
+        "cause_of_death": {
+          "text": "She met her end when the display developed a spiderweb crack.",
+          "detail_id": "d2"
+        },
+        "life": [
+          {
+            "text": "Miss Digit-Screenworth provided constant illumination for the evening hours, though her casing bore several faint scratches from its time resting upon the pine mantelpiece. (detail_ids: d3, d4)",
+            "detail_ids": [
+              "d3",
+              "d4"
+            ]
+          },
+          {
+            "text": "Its vibrant red border often provided a certain flair when placed beside the sugar bowl, and it reliably served as the holder for evening messages. (detail_ids: d5)",
+            "detail_ids": [
+              "d5"
+            ]
+          }
+        ],
+        "survived_by": "a charging cable of indeterminate length and a remote control with missing batteries",
+        "in_lieu_of_flowers": "In lieu of flowers, we ask that the batteries in the wireless mouse be replaced.",
+        "epitaph": "It showed the world, then it dimmed. Quietly now."
+      }
+    ],
+    "timings": {
+      "look_ms": 445,
+      "write_ms": 2643,
+      "total_ms": 3089
+    }
+  },
+  {
+    "file": "04-burnt-toast.jpg",
+    "expected": "thing",
+    "publishable": true,
+    "subject": "thing",
+    "object": "slice of toast",
+    "details": [
+      {
+        "id": "d1",
+        "text": "burnt edges",
+        "kind": "damage"
+      },
+      {
+        "id": "d2",
+        "text": "charred surface",
+        "kind": "damage"
+      },
+      {
+        "id": "d3",
+        "text": "discoloration",
+        "kind": "wear"
+      },
+      {
+        "id": "d4",
+        "text": "golden brown crust",
+        "kind": "feature"
+      },
+      {
+        "id": "d5",
+        "text": "square shape",
+        "kind": "feature"
+      }
+    ],
+    "obituary": {
+      "name": "Mr. Percival Crispington, Crust",
+      "born": "est. 2023",
+      "died": "October 31, 2026",
+      "dateline": "Saturday, October 31, 2026",
+      "headline": "A fine specimen, browned for the daily breakfast",
+      "cause": {
+        "text": "Mr. Crispington passed away from significant charred surface damage.",
+        "detail_id": "d2",
+        "natural": false
+      },
+      "life": [
+        {
+          "text": "He began his service with a handsome golden brown crust, serving well on Tuesday mornings.",
+          "detail_ids": [
+            "d4"
+          ]
+        },
+        {
+          "text": "His tenure was marked by a slight discoloration, a quiet period spent near the edge of the butter dish.",
+          "detail_ids": [
+            "d3"
+          ]
+        },
+        {
+          "text": "He spent his final hours bearing burnt edges, a small tragedy near the corner of his square shape.",
+          "detail_ids": [
+            "d1",
+            "d5"
+          ]
+        }
+      ],
+      "survived_by": "a butter knife with one missing point and the small dish holding the jam.",
+      "in_lieu_of_flowers": "please ensure the toaster coils are kept clean.",
+      "epitaph": "A fine slice, offered up to the morning light."
+    },
+    "checks": {
+      "first_try_pass": true,
+      "retried": false,
+      "fallback_used": false,
+      "soft_mismatches": 0,
+      "repaired": []
+    },
+    "drafts": [
+      {
+        "name": "Mr. Percival Crispington, Crust",
+        "born": "est. 2023",
+        "headline": "A fine specimen, browned for the daily breakfast.",
+        "cause_of_death": {
+          "text": "Mr. Crispington passed away from significant charred surface damage.",
+          "detail_id": "d2"
+        },
+        "life": [
+          {
+            "text": "He began his service with a handsome golden brown crust, serving well on Tuesday mornings (d4).",
+            "detail_ids": [
+              "d4"
+            ]
+          },
+          {
+            "text": "His tenure was marked by a slight discoloration (d3), a quiet period spent near the edge of the butter dish.",
+            "detail_ids": [
+              "d3"
+            ]
+          },
+          {
+            "text": "He spent his final hours bearing burnt edges (d1), a small tragedy near the corner of his square shape (d5).",
+            "detail_ids": [
+              "d1",
+              "d5"
+            ]
+          }
+        ],
+        "survived_by": "a butter knife with one missing point and the small dish holding the jam.",
+        "in_lieu_of_flowers": "In lieu of flowers, please ensure the toaster coils are kept clean.",
+        "epitaph": "A fine slice, offered up to the morning light."
+      }
+    ],
+    "timings": {
+      "look_ms": 390,
+      "write_ms": 2504,
+      "total_ms": 2895
+    }
+  },
+  {
+    "file": "04-burnt-toast.jpg",
+    "expected": "thing",
+    "publishable": true,
+    "subject": "thing",
+    "object": "slice of toast",
+    "details": [
+      {
+        "id": "d1",
+        "text": "burnt edges",
+        "kind": "damage"
+      },
+      {
+        "id": "d2",
+        "text": "charred surface",
+        "kind": "damage"
+      },
+      {
+        "id": "d3",
+        "text": "discoloration",
+        "kind": "wear"
+      },
+      {
+        "id": "d4",
+        "text": "golden brown color",
+        "kind": "feature"
+      },
+      {
+        "id": "d5",
+        "text": "square shape",
+        "kind": "feature"
+      }
+    ],
+    "obituary": {
+      "name": "Edmund Crispy Toastsworth",
+      "born": "est. 2021",
+      "died": "October 31, 2026",
+      "dateline": "Saturday, October 31, 2026",
+      "headline": "A fine specimen, well-browned in his final moments",
+      "cause": {
+        "text": "He passed away due to a thoroughly charred surface.",
+        "detail_id": "d2",
+        "natural": false
+      },
+      "life": [
+        {
+          "text": "He was a square shape, holding his golden brown color with quiet dignity during his time on the breakfast plate.",
+          "detail_ids": [
+            "d4",
+            "d5"
+          ]
+        },
+        {
+          "text": "His edges developed a burn, a slight discoloration marking a particularly spirited morning near the toaster.",
+          "detail_ids": [
+            "d1",
+            "d3"
+          ]
+        }
+      ],
+      "survived_by": "a butter knife whose blade is perpetually dull, and several crumbs of indeterminate origin.",
+      "in_lieu_of_flowers": "please ensure the butter dish is wiped clean after use.",
+      "epitaph": "A brief, golden existence. A worthy morning."
+    },
+    "checks": {
+      "first_try_pass": true,
+      "retried": false,
+      "fallback_used": false,
+      "soft_mismatches": 0,
+      "repaired": []
+    },
+    "drafts": [
+      {
+        "name": "Edmund Crispy Toastsworth",
+        "born": "est. 2021",
+        "headline": "A fine specimen, well-browned in his final moments.",
+        "cause_of_death": {
+          "text": "He passed away due to a thoroughly charred surface.",
+          "detail_id": "d2"
+        },
+        "life": [
+          {
+            "text": "He was a square shape, holding his golden brown color with quiet dignity during his time on the breakfast plate. (d4, d5)",
+            "detail_ids": [
+              "d4",
+              "d5"
+            ]
+          },
+          {
+            "text": "His edges developed a burn, a slight discoloration marking a particularly spirited morning near the toaster. (d1, d3)",
+            "detail_ids": [
+              "d1",
+              "d3"
+            ]
+          }
+        ],
+        "survived_by": "A butter knife whose blade is perpetually dull, and several crumbs of indeterminate origin.",
+        "in_lieu_of_flowers": "In lieu of flowers, please ensure the butter dish is wiped clean after use.",
+        "epitaph": "A brief, golden existence. A worthy morning."
+      }
+    ],
+    "timings": {
+      "look_ms": 390,
+      "write_ms": 2282,
+      "total_ms": 2672
+    }
+  },
+  {
+    "file": "07-collapsing-jack-o-lanterns.jpg",
+    "expected": "thing",
+    "publishable": true,
+    "subject": "thing",
+    "object": "carved pumpkins",
+    "details": [
+      {
+        "id": "d1",
+        "text": "rotting",
+        "kind": "damage"
+      },
+      {
+        "id": "d2",
+        "text": "dirt",
+        "kind": "wear"
+      },
+      {
+        "id": "d3",
+        "text": "orange color",
+        "kind": "feature"
+      },
+      {
+        "id": "d4",
+        "text": "jack-o'-lantern faces",
+        "kind": "feature"
+      },
+      {
+        "id": "d5",
+        "text": "stem on largest pumpkin",
+        "kind": "feature"
+      }
+    ],
+    "obituary": {
+      "name": "Mr. Josiah Gourdington",
+      "born": "est. 2022",
+      "died": "October 31, 2026",
+      "dateline": "Saturday, October 31, 2026",
+      "headline": "A Grand Jack-O'-Lantern, Now Quiet",
+      "cause": {
+        "text": "Mr. Gourdington passed away due to advanced rotting.",
+        "detail_id": "d1",
+        "natural": false
+      },
+      "life": [
+        {
+          "text": "He was a prominent fixture of the autumn display, his orange color catching the afternoon light near the front stoop.",
+          "detail_ids": [
+            "d3",
+            "d4"
+          ]
+        },
+        {
+          "text": "His life was marked by collecting dirt over his surface while proudly displaying his carved features.",
+          "detail_ids": [
+            "d2",
+            "d4"
+          ]
+        },
+        {
+          "text": "Even his stout stem, noted on the largest specimen, saw many twilight gatherings indoors.",
+          "detail_ids": [
+            "d5"
+          ]
+        }
+      ],
+      "survived_by": "a collection of mismatched ceramic platters and a single, dusty doily.",
+      "in_lieu_of_flowers": "please wipe down the silver serving tray.",
+      "epitaph": "A fine glow for a short while."
+    },
+    "checks": {
+      "first_try_pass": true,
+      "retried": false,
+      "fallback_used": false,
+      "soft_mismatches": 0,
+      "repaired": []
+    },
+    "drafts": [
+      {
+        "name": "Mr. Josiah Gourdington",
+        "born": "est. 2022",
+        "headline": "A Grand Jack-O'-Lantern, Now Quiet.",
+        "cause_of_death": {
+          "text": "Mr. Gourdington passed away due to advanced rotting.",
+          "detail_id": "d1"
+        },
+        "life": [
+          {
+            "text": "He was a prominent fixture of the autumn display, his orange color catching the afternoon light near the front stoop. (d3, d4)",
+            "detail_ids": [
+              "d3",
+              "d4"
+            ]
+          },
+          {
+            "text": "His life was marked by collecting dirt over his surface while proudly displaying his carved features. (d2, d4)",
+            "detail_ids": [
+              "d2",
+              "d4"
+            ]
+          },
+          {
+            "text": "Even his stout stem, noted on the largest specimen, saw many twilight gatherings indoors. (d5)",
+            "detail_ids": [
+              "d5"
+            ]
+          }
+        ],
+        "survived_by": "a collection of mismatched ceramic platters and a single, dusty doily.",
+        "in_lieu_of_flowers": "In lieu of flowers, please wipe down the silver serving tray.",
+        "epitaph": "A fine glow for a short while."
+      }
+    ],
+    "timings": {
+      "look_ms": 451,
+      "write_ms": 2476,
+      "total_ms": 2927
+    }
+  },
+  {
+    "file": "07-collapsing-jack-o-lanterns.jpg",
+    "expected": "thing",
+    "publishable": true,
+    "subject": "thing",
+    "object": "carved pumpkins",
+    "details": [
+      {
+        "id": "d1",
+        "text": "cracks on pumpkin skin",
+        "kind": "damage"
+      },
+      {
+        "id": "d2",
+        "text": "rotting appearance of small pumpkin",
+        "kind": "damage"
+      },
+      {
+        "id": "d3",
+        "text": "dirt on pumpkin surfaces",
+        "kind": "wear"
+      },
+      {
+        "id": "d4",
+        "text": "orange color",
+        "kind": "feature"
+      },
+      {
+        "id": "d5",
+        "text": "jack-o'-lantern faces",
+        "kind": "feature"
+      },
+      {
+        "id": "d6",
+        "text": "stem on larger pumpkin",
+        "kind": "feature"
+      }
+    ],
+    "obituary": {
+      "name": "Silas Gourdington III",
+      "born": "est. 2020",
+      "died": "October 31, 2026",
+      "dateline": "Saturday, October 31, 2026",
+      "headline": "A Great Jack-o'-Lantern, Now Quiet",
+      "cause": {
+        "text": "He passed away after developing small areas of rot across his form.",
+        "detail_id": "d2",
+        "natural": false
+      },
+      "life": [
+        {
+          "text": "Silas was an orange fixture in the hearth alcove, his carved visage providing welcome illumination to the evening gathering.",
+          "detail_ids": [
+            "d4",
+            "d5"
+          ]
+        },
+        {
+          "text": "For several crisp months, he sat upon the sill, his skin sometimes marked by surface dust, a quiet observer of the afternoon light.",
+          "detail_ids": [
+            "d3"
+          ]
+        },
+        {
+          "text": "He was a fine specimen, his sturdy girth complemented by a modest stalk upon his apex.",
+          "detail_ids": [
+            "d6"
+          ]
+        }
+      ],
+      "survived_by": "a slightly damp doily and the accumulated crumbs from autumn gatherings.",
+      "in_lieu_of_flowers": "kindly wipe down the adjacent countertop.",
+      "epitaph": "His bright days offered such good cheer."
+    },
+    "checks": {
+      "first_try_pass": false,
+      "retried": true,
+      "fallback_used": false,
+      "soft_mismatches": 1,
+      "repaired": [],
+      "first_problems": [
+        "life sentence 2 is 221 characters: keep it under 220"
+      ]
+    },
+    "drafts": [
+      {
+        "name": "Mr. Silas Gourdington",
+        "born": "est. 2021",
+        "headline": "A handsome face, now quiet.",
+        "cause_of_death": {
+          "text": "His structure ultimately gave way due to several visible cracks on his skin.",
+          "detail_id": "d1"
+        },
+        "life": [
+          {
+            "text": "Mr. Gourdington was a fixture in the porch display, his bright orange hue (d4) providing much cheer during the early autumn nights. He often held the stern, carved expressions (d5) of a watchful ancestor.",
+            "detail_ids": [
+              "d4",
+              "d5"
+            ]
+          },
+          {
+            "text": "Though some of his brethren showed signs of decay (d2), his larger form, complete with a firm stem (d6), held its shape admirably near the steps. He collected a fine patina of surface dirt (d3) from the afternoon drizzle.",
+            "detail_ids": [
+              "d2",
+              "d6",
+              "d3"
+            ]
+          }
+        ],
+        "survived_by": "a very dusty doormat and three unlit candles.",
+        "in_lieu_of_flowers": "In lieu of flowers, please ensure the skirting boards are wiped down.",
+        "epitaph": "He brought light, even as the shadows grew."
+      },
+      {
+        "name": "Silas Gourdington III",
+        "born": "est. 2020",
+        "headline": "A Great Jack-o'-Lantern, Now Quiet",
+        "cause_of_death": {
+          "text": "He passed away after developing small areas of rot across his form.",
+          "detail_id": "d2"
+        },
+        "life": [
+          {
+            "text": "Silas was an orange fixture in the hearth alcove, his carved visage providing welcome illumination to the evening gathering. [d4, d5]",
+            "detail_ids": [
+              "d4",
+              "d5"
+            ]
+          },
+          {
+            "text": "For several crisp months, he sat upon the sill, his skin sometimes marked by surface dust, a quiet observer of the afternoon light. [d3]",
+            "detail_ids": [
+              "d3"
+            ]
+          },
+          {
+            "text": "He was a fine specimen, his sturdy girth complemented by a modest stalk upon his apex. [d6]",
+            "detail_ids": [
+              "d6"
+            ]
+          }
+        ],
+        "survived_by": "a slightly damp doily and the accumulated crumbs from autumn gatherings.",
+        "in_lieu_of_flowers": "In lieu of flowers, kindly wipe down the adjacent countertop.",
+        "epitaph": "His bright days offered such good cheer."
+      }
+    ],
+    "timings": {
+      "look_ms": 597,
+      "write_ms": 5389,
+      "total_ms": 5987
+    }
+  }
+]

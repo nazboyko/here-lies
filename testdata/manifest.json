@@ -1,0 +1,155 @@
+[
+  {
+    "file": "01-cracked-phone.jpg",
+    "expected": "thing",
+    "what": "smartphone with a badly cracked screen",
+    "page": "https://commons.wikimedia.org/wiki/File:MyPhone_my27_front_panel.jpg",
+    "author": "JGBlue1509",
+    "license": "CC BY 4.0",
+    "publishable": true
+  },
+  {
+    "file": "02-frayed-charger-cable.jpg",
+    "expected": "thing",
+    "what": "laptop charger cable split open with exposed wires",
+    "page": "https://commons.wikimedia.org/wiki/File:Frayed_and_Broken_MacBook_Pro_Charger_Cable_(16868118774).jpg",
+    "author": "Tony Webster from Minneapolis, Minnesota, United States",
+    "license": "CC BY 2.0",
+    "publishable": true
+  },
+  {
+    "file": "03-worn-out-shoes.jpg",
+    "expected": "thing",
+    "what": "pair of torn canvas shoes with holes and a split sole",
+    "page": "https://commons.wikimedia.org/wiki/File:Worn-out_torn_shabby_hole-ridden_grey_canvas_shoes_light_soles_dirty_used_broken_laces_Utg%C3%A5tte_slitte_hullete_fillete_gr%C3%A5_t%C3%B8ysko_med_lette_gr%C3%A5_plasts%C3%A5ler_s%C3%A5ler_brukte_skitne_%C3%B8delagte_skolisser_Norway_2025_IMG_1772.jpg",
+    "author": "Wolfmann",
+    "license": "CC BY 4.0",
+    "publishable": true
+  },
+  {
+    "file": "04-burnt-toast.jpg",
+    "expected": "thing",
+    "what": "two slices of burnt toast on a white plate",
+    "page": "https://commons.wikimedia.org/wiki/File:Two_pieces_of_burnt_toast.jpg",
+    "author": "Sheep purple",
+    "license": "CC BY 2.0",
+    "publishable": true
+  },
+  {
+    "file": "05-broken-mug.jpg",
+    "expected": "thing",
+    "what": "white mug with a large piece broken out of the rim",
+    "page": "https://commons.wikimedia.org/wiki/File:%E3%81%95%E3%82%88%E3%81%AA%E3%82%89%E3%83%9C%E3%82%AF%E3%81%AE%E5%A4%A7%E5%A5%BD%E3%81%8D%E3%81%AA%E3%82%AB%E3%83%83%E3%83%97_(3721031546).jpg",
+    "author": "Jun OHWADA",
+    "license": "CC BY 2.0",
+    "publishable": true
+  },
+  {
+    "file": "06-broken-drinking-glass.jpg",
+    "expected": "thing",
+    "what": "shattered drinking glass with shards on a wooden table",
+    "page": "https://commons.wikimedia.org/wiki/File:Broken_drinking_glass.JPG",
+    "author": "Santeri Viinamäki",
+    "license": "CC BY 3.0",
+    "publishable": true
+  },
+  {
+    "file": "07-collapsing-jack-o-lanterns.jpg",
+    "expected": "thing",
+    "what": "three old jack-o'-lanterns, the smallest collapsing",
+    "page": "https://commons.wikimedia.org/wiki/File:Old_jack-o-lanters_(54177345952).jpg",
+    "author": "Giulia Forsythe",
+    "license": "CC BY 2.0",
+    "publishable": true
+  },
+  {
+    "file": "08-burnt-light-bulb.jpg",
+    "expected": "thing",
+    "what": "scorched blackened light bulb lying in ash",
+    "page": "https://commons.wikimedia.org/wiki/File:Close-up_of_a_burnt_light_bulb_on_the_ground.jpg",
+    "author": "Shixart1985",
+    "license": "CC BY 2.0",
+    "publishable": true
+  },
+  {
+    "file": "09-dead-succulent.jpg",
+    "expected": "thing",
+    "what": "rotting translucent succulent in a terracotta pot",
+    "page": "https://commons.wikimedia.org/wiki/File:Homebase_Succulent_Rescue_Attempt_(4526722760).jpg",
+    "author": "stephen boisvert from Chicago, United States",
+    "license": "CC BY 2.0",
+    "publishable": true
+  },
+  {
+    "file": "10-warped-cassette-adapter.jpg",
+    "expected": "thing",
+    "what": "heat-warped cassette tape adapter with its cable",
+    "page": "https://commons.wikimedia.org/wiki/File:Damaged_CD-to-cassette_tape_adapter_(2775206027).jpg",
+    "author": "Andrew A. Shenouda from Riyadh, Saudi Arabia",
+    "license": "CC BY 2.0",
+    "publishable": true
+  },
+  {
+    "file": "11-abandoned-umbrella.jpg",
+    "expected": "thing",
+    "what": "collapsed red umbrella dumped in a bush by a fence",
+    "page": "https://commons.wikimedia.org/wiki/File:Discarded_red_umbrella.jpg",
+    "author": "Steve Bowbrick",
+    "license": "CC BY 2.0",
+    "publishable": true
+  },
+  {
+    "file": "12-cat.jpg",
+    "expected": "animal",
+    "what": "black and white cat lying on a sofa",
+    "page": "https://commons.wikimedia.org/wiki/File:Domestic_cat_2011_G02.jpg",
+    "author": "George Chernilevsky",
+    "license": "Public domain",
+    "publishable": true
+  },
+  {
+    "file": "13-dog.jpg",
+    "expected": "animal",
+    "what": "close-up of a golden retriever's face",
+    "page": "https://commons.wikimedia.org/wiki/File:Golden_Retriever_head_portrait_looking_up.jpg",
+    "author": "Candeadly",
+    "license": "CC BY 4.0",
+    "publishable": true
+  },
+  {
+    "file": "14-healthy-monstera.jpg",
+    "expected": "living_plant",
+    "what": "large healthy green monstera houseplant indoors",
+    "page": "https://commons.wikimedia.org/wiki/File:Monstera_(22606003106).jpg",
+    "author": "bizmac from Japan",
+    "license": "CC BY 2.0",
+    "publishable": true
+  },
+  {
+    "file": "15-person-portrait.jpg",
+    "expected": "person",
+    "what": "smiling woman with curly hair sitting in an armchair",
+    "page": "https://commons.wikimedia.org/wiki/File:Smiling_senior_woman_with_curly_hair_portrait.jpg",
+    "author": "Shixart1985",
+    "license": "CC BY 2.0",
+    "publishable": false
+  },
+  {
+    "file": "16-intact-mug.jpg",
+    "expected": "thing",
+    "what": "clean intact white mug on its side with coffee beans",
+    "page": "https://commons.wikimedia.org/wiki/File:Coffee_beans_and_white_mug.jpg",
+    "author": "Jessica Lewis",
+    "license": "CC0",
+    "publishable": true
+  },
+  {
+    "file": "17-blurry-unclear.jpg",
+    "expected": "unclear",
+    "what": "heavily out-of-focus green glow on black, subject unrecognizable",
+    "page": "https://commons.wikimedia.org/wiki/File:Out_of_Focus_(51386294413).jpg",
+    "author": "Tero Karppinen from Finland",
+    "license": "CC BY 2.0",
+    "publishable": true
+  }
+]
