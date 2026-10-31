@@ -31,7 +31,7 @@ eval:
 
 # Browser tests against the real server and the real model.
 e2e: build
-	cd e2e && npm ci && npx playwright test
+	cd e2e && npm ci && npx playwright install chromium && npx playwright test
 
 clean:
 	rm -rf bin web/dist/assets web/dist/index.html web/dist/favicon.svg e2e/out
