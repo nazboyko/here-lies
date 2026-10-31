@@ -44,12 +44,14 @@ func main() {
 	if err != nil {
 		logger.Fatalf("Can't listen on %s: %v. Is Here Lies already running?", addr, err)
 	}
-	_, port, _ := net.SplitHostPort(ln.Addr().String())
+	host, port, _ := net.SplitHostPort(ln.Addr().String())
 
 	h := client.Health(context.Background())
 	fmt.Printf("Here Lies is open at http://localhost:%s\n", port)
-	for _, ip := range lanIPs() {
-		fmt.Printf("On your phone (same Wi-Fi): http://%s:%s\n", ip, port)
+	if ip := net.ParseIP(host); ip != nil && ip.IsUnspecified() {
+		for _, lan := range lanIPs() {
+			fmt.Printf("On your phone (same Wi-Fi): http://%s:%s\n", lan, port)
+		}
 	}
 	if h.Problem != "" {
 		fmt.Println(h.Problem)
