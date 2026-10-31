@@ -151,7 +151,7 @@ h3:focus, h3:focus-visible { outline: none; }
 .seen { font-size: 13.5px !important; color: var(--ink-soft); line-height: 1.5 !important; }
 
 /* the card develops like ink on paper: the one motion moment */
-.clipping .photo, .clipping .name { animation: ink 1.4s ease-out both; }
+.clipping .photo, .clipping .name { animation: ink 1.4s ease-out backwards; }
 .clipping .name { animation-delay: .25s; }
 .clipping.exporting .photo, .clipping.exporting .name { animation: none; }
 @keyframes ink { from { opacity: 0; filter: grayscale(1) blur(3px) brightness(1.6); } }

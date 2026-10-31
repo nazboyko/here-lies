@@ -195,7 +195,7 @@ func TestFinalizeCleansProse(t *testing.T) {
 	if o.Cause.Text != "A frayed cable near the plug." || o.Life[0].Text != "His tips yellowed in service." {
 		t.Errorf("ids left in prose: %q / %q", o.Cause.Text, o.Life[0].Text)
 	}
-	if o.SurvivedBy != "three chargers nobody can identify" || o.InLieuOfFlowers != "please stop wrapping cables" {
+	if o.SurvivedBy != "three chargers nobody can identify." || o.InLieuOfFlowers != "please stop wrapping cables." {
 		t.Errorf("labels: %q / %q", o.SurvivedBy, o.InLieuOfFlowers)
 	}
 }

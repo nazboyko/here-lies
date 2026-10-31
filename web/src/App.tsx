@@ -207,7 +207,7 @@ export function App() {
                 <NoticeCard notice={state.result.notice} />
                 <div className="card-actions">
                   <button className="btn" type="button" onClick={again}>
-                    Bury another
+                    Try another photo
                   </button>
                 </div>
               </div>

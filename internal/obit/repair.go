@@ -108,6 +108,7 @@ func finalize(d Draft, l Look, now time.Time) (Obituary, []string) {
 	if jokeFixed {
 		repaired = append(repaired, repairedJoke)
 	}
+	o.SurvivedBy, o.InLieuOfFlowers = endSentence(o.SurvivedBy), endSentence(o.InLieuOfFlowers)
 	if epitaphProblem(o.Epitaph) != "" {
 		o.Epitaph = "Rest in pieces."
 		repaired = append(repaired, repairedEpitaph)
@@ -186,4 +187,12 @@ func lowerStart(s string) string {
 		return strings.ToLower(s[:1]) + s[1:]
 	}
 	return s
+}
+
+// endSentence adds the final period a printed line needs.
+func endSentence(s string) string {
+	if s == "" || strings.ContainsAny(s[len(s)-1:], ".!?") {
+		return s
+	}
+	return s + "."
 }
