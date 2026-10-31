@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Here Lies</title>
+<meta name="description" content="Obituaries for the things that died in your house, written by a model on your own laptop.">
+<meta name="theme-color" content="#1e1828">
+<meta property="og:title" content="Here Lies">
+<meta property="og:description" content="Obituaries for the things that died in your house, written by a model on your own laptop.">
+<meta property="og:image" content="https://nazboyko.github.io/here-lies/img/cover.png">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<style>
+  @font-face { font-family: "Old Standard TT"; src: url(fonts/old-standard-tt-latin-400-normal.woff2) format("woff2"); font-weight: 400; font-display: swap; }
+  @font-face { font-family: "Old Standard TT"; src: url(fonts/old-standard-tt-latin-700-normal.woff2) format("woff2"); font-weight: 700; font-display: swap; }
+  @font-face { font-family: "Old Standard TT"; src: url(fonts/old-standard-tt-latin-400-italic.woff2) format("woff2"); font-style: italic; font-display: swap; }
+  @font-face { font-family: "UnifrakturMaguntia"; src: url(fonts/unifrakturmaguntia-latin-400-normal.woff2) format("woff2"); font-display: swap; }
+  :root {
+    --night: #1e1828; --night-2: #2a2236; --night-line: #4a3f5a;
+    --moon: #d9d3e4; --moon-dim: #a49cb3;
+    --marigold: #f2a20c; --marigold-deep: #c9640a;
+    --paper: #e6e1d3; --ink: #24201c; --ink-soft: #5e574e;
+    --serif: "Old Standard TT", Georgia, "Times New Roman", serif;
+    --mast: "UnifrakturMaguntia", "Old Standard TT", serif;
+    color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--night); color: var(--moon); font-family: var(--serif); font-size: 18px; line-height: 1.6; }
+  a { color: var(--marigold); }
+  :focus-visible { outline: 2px solid var(--marigold); outline-offset: 3px; }
+  img { max-width: 100%; height: auto; display: block; }
+  .page { max-width: 1080px; margin: 0 auto; padding: 56px 16px 80px; }
+  h1 { font-family: var(--mast); font-weight: 400; font-size: clamp(64px, 13vw, 128px); line-height: .9; margin: 0 0 20px; color: var(--paper); }
+  h2 { font-size: 30px; line-height: 1.2; color: var(--paper); margin: 72px 0 16px; }
+  .lede { font-size: 22px; max-width: 36rem; margin: 0 0 14px; }
+  .rule { font-style: italic; color: var(--marigold); font-size: 20px; margin: 0 0 28px; }
+  .actions { display: flex; flex-wrap: wrap; gap: 12px; }
+  .btn { display: inline-block; font-weight: 700; font-size: 17px; border-radius: 4px; padding: 11px 18px; text-decoration: none; border: 1.5px solid var(--marigold); background: var(--marigold); color: #1b1305; }
+  .btn.ghost { background: transparent; color: var(--marigold); }
+  p { max-width: 40rem; }
+  .muted { color: var(--moon-dim); }
+
+  .cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px 28px; margin-top: 24px; }
+  @media (max-width: 860px) { .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 520px) { .cards { grid-template-columns: 1fr; } }
+  .cards figure { margin: 0; }
+  .cards a { display: block; }
+  .cards img { box-shadow: 0 18px 40px -18px rgba(0,0,0,.7); }
+  .cards figure:nth-child(odd) img { transform: rotate(-1deg); }
+  .cards figure:nth-child(even) img { transform: rotate(.8deg); }
+  .cards figcaption { margin-top: 14px; font-size: 16px; color: var(--moon-dim); }
+  .cards figcaption b { color: var(--paper); font-weight: 700; }
+
+  .steps { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+  @media (max-width: 860px) { .steps { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 520px) { .steps { grid-template-columns: 1fr; } }
+  .steps li { background: var(--paper); color: var(--ink); padding: 16px 18px; border-radius: 3px; }
+  .steps li.code { background: var(--marigold); color: #1b1305; }
+  .steps b { display: block; letter-spacing: .1em; text-transform: uppercase; font-size: 14px; }
+  .steps span { display: block; font-style: italic; font-size: 15px; margin-bottom: 6px; opacity: .8; }
+
+  table { border-collapse: collapse; width: 100%; max-width: 44rem; font-size: 17px; }
+  td { padding: 9px 0; border-bottom: 1px dotted var(--night-line); vertical-align: top; }
+  td:last-child { text-align: right; color: var(--paper); font-weight: 700; padding-left: 16px; white-space: nowrap; }
+
+  pre { background: var(--night-2); border: 1px solid var(--night-line); border-radius: 4px; padding: 16px 18px; overflow-x: auto; font-size: 15px; line-height: 1.6; max-width: 44rem; }
+  code { font-family: ui-monospace, Menlo, Consolas, monospace; }
+  .notices { display: flex; flex-wrap: wrap; gap: 20px; margin-top: 18px; }
+  .notices img { width: 340px; }
+  .two { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 32px; align-items: start; }
+  @media (max-width: 860px) { .two { grid-template-columns: 1fr; } }
+  ul.plain { padding-left: 20px; max-width: 40rem; }
+  ul.plain li { margin-bottom: 8px; }
+  .credits { font-size: 15px; color: var(--moon-dim); }
+  .credits table { font-size: 15px; }
+  .credits td:last-child { font-weight: 400; color: var(--moon-dim); }
+  footer { margin-top: 72px; padding-top: 20px; border-top: 1px solid var(--night-line); font-size: 15px; color: var(--moon-dim); }
+</style>
+</head>
+<body>
+<main class="page">
+
+  <header>
+    <h1>Here Lies</h1>
+    <p class="lede">Obituaries for the things that died in your house, written by a model on your own laptop.</p>
+    <p class="rule">It may invent a name. It may not invent a scratch.</p>
+    <div class="actions">
+      <a class="btn" href="https://github.com/nazboyko/here-lies">Get it on GitHub</a>
+      <a class="btn ghost" href="#run">Run it in three commands</a>
+    </div>
+  </header>
+
+  <section aria-labelledby="cards-title">
+    <h2 id="cards-title">Recently departed</h2>
+    <p class="muted">Real cards, downloaded from the app. Gemma 4 looked at each photo on a laptop, wrote the obituary, and plain code checked every detail it cited. Click a card for the full size.</p>
+    <div class="cards">
+      <figure>
+        <a href="img/card-07-collapsing-jack-o-lanterns.png"><img src="img/small/card-07-collapsing-jack-o-lanterns.jpg" width="700" height="1884" loading="lazy" alt="Obituary card for Silas Gourdington III, three carved pumpkins, the smallest collapsed. Cause of death: visible patches of rot."></a>
+        <figcaption><b>Silas Gourdington III.</b> “A bright glow for a short, fine season.”</figcaption>
+      </figure>
+      <figure>
+        <a href="img/card-04-burnt-toast.png"><img src="img/small/card-04-burnt-toast.jpg" width="700" height="1818" loading="lazy" alt="Obituary card for Mr. Chester Golden-Crust, two slices of burnt toast on a plate. Cause of death: charred edges."></a>
+        <figcaption><b>Mr. Chester Golden-Crust.</b> In lieu of flowers, please wipe the crumbs from beneath the toaster tray.</figcaption>
+      </figure>
+      <figure>
+        <a href="img/card-03-worn-out-shoes.png"><img src="img/small/card-03-worn-out-shoes.jpg" width="700" height="1750" loading="lazy" alt="Obituary card for Silas B. Canvas-Sole, a pair of torn canvas shoes. Cause of death: torn fabric on the lower shoe."></a>
+        <figcaption><b>Silas B. Canvas-Sole.</b> “The pavement called, and he answered it all.”</figcaption>
+      </figure>
+      <figure>
+        <a href="img/card-09-dead-succulent.png"><img src="img/small/card-09-dead-succulent.jpg" width="700" height="1840" loading="lazy" alt="Obituary card for Agnes Petalbrook, a rotting succulent in a terracotta pot. Cause of death: mushy sections across her leaves."></a>
+        <figcaption><b>Agnes Petalbrook.</b> Survived by a terracotta shard and the faint smell of potting mix.</figcaption>
+      </figure>
+      <figure>
+        <a href="img/card-08-burnt-light-bulb.png"><img src="img/small/card-08-burnt-light-bulb.jpg" width="700" height="1712" loading="lazy" alt="Obituary card for Mr. Arthur Glowwick, a scorched light bulb lying in ash. Cause of death: severe charring."></a>
+        <figcaption><b>Mr. Arthur Glowwick.</b> “It shone when asked, and dimmed when done.”</figcaption>
+      </figure>
+      <figure>
+        <a href="img/card-01-cracked-phone.png"><img src="img/small/card-01-cracked-phone.jpg" width="700" height="2154" loading="lazy" alt="Obituary card for Eleanor G. Glimmerphone, a phone with a cracked screen. Cause of death: a spiderweb crack across her display."></a>
+        <figcaption><b>Eleanor G. Glimmerphone.</b> Survived by a charging cord that coils carelessly and several stray coasters.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section aria-labelledby="alive-title">
+    <h2 id="alive-title">Some things are still alive</h2>
+    <p>People, pets and healthy plants get a notice instead of an obituary. In the test run it turned away the cat, the dog, the monstera and the person, every time.</p>
+    <div class="notices">
+      <img src="img/notice-cat.png" width="794" height="338" loading="lazy" alt="Notice from The Household Gazette: Still alive. Give it a treat instead.">
+      <img src="img/notice-plant.png" width="794" height="338" loading="lazy" alt="Notice from The Household Gazette: This plant is still with us. Water it.">
+    </div>
+  </section>
+
+  <section aria-labelledby="how-title">
+    <h2 id="how-title">How it works</h2>
+    <ol class="steps">
+      <li><b>1 · Look</b><span>Gemma 4 sees the photo</span>It lists what it can see on the object, injuries first, and code numbers each detail.</li>
+      <li class="code"><b>2 · Gate</b><span>plain code</span>People, pets and healthy plants stop here with a still-alive notice.</li>
+      <li><b>3 · Write</b><span>Gemma 4, text only</span>The writer never sees the photo. It writes from the numbered list and cites a number for every physical sentence.</li>
+      <li class="code"><b>4 · Check</b><span>plain code</span>Every cited number must exist, and the cause of death must be real damage or wear. A failing draft gets one rewrite, then repair.</li>
+    </ol>
+  </section>
+
+  <section aria-labelledby="rule-title">
+    <h2 id="rule-title">A name, yes. A scratch, no.</h2>
+    <div class="two">
+      <div>
+        <p>The name, the birth year and the jokes are invented on purpose. The body is not. Each sentence about how the object looks has to point at a detail from the looking step, and Go code checks the pointer before the card is printed. The card footer lists those details, so you can hold the obituary up against the photo.</p>
+        <p>I ran 17 photos from Wikimedia Commons through the real pipeline on my laptop and checked every detail on every card against its photo by eye.</p>
+      </div>
+      <table>
+        <tbody>
+          <tr><td>Gate decision correct</td><td>16 of 17</td></tr>
+          <tr><td>Passed the check on the first draft</td><td>12 of 13</td></tr>
+          <tr><td>Details on printed cards</td><td>65</td></tr>
+          <tr><td>Really in the photo</td><td>53</td></tr>
+          <tr><td>Not in the photo</td><td>4</td></tr>
+          <tr><td>Too close to call</td><td>8</td></tr>
+          <tr><td>Median seconds to look, then write</td><td>0.8 + 2.4</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="muted">The check proves that a sentence points at a listed detail. It cannot prove the detail is real: two of 13 causes of death rested on details I could not find in the photo, a "missing screw hole" and a "torn" umbrella that was only folded. A blurred green glow got buried as a flower. The full table is in <a href="https://github.com/nazboyko/here-lies/blob/main/eval/results.md">eval/results.md</a>.</p>
+  </section>
+
+  <section aria-labelledby="run">
+    <h2 id="run">Run it yourself</h2>
+    <p>You need <a href="https://ollama.com">Ollama</a>, Go 1.26 and Node 20 or newer.</p>
+<pre><code>ollama pull gemma4:e4b
+git clone https://github.com/nazboyko/here-lies &amp;&amp; cd here-lies
+make run</code></pre>
+    <p>Open <code>http://localhost:8787</code>. The server also prints an address for your phone on the same Wi-Fi.</p>
+  </section>
+
+  <section aria-labelledby="privacy-title">
+    <h2 id="privacy-title">Your photos stay home</h2>
+    <ul class="plain">
+      <li>The photo goes from your browser to your own laptop and nowhere else. No account, no upload to a company, no retention policy to read.</li>
+      <li>The browser shrinks it and drops the EXIF data before sending. The server keeps it in memory for one request and never writes it to disk.</li>
+      <li>The page loads nothing from the internet. The browser test records every request during a full run and found none that left the machine.</li>
+      <li>With the model pulled, it works with Wi-Fi off, and each obituary costs nothing.</li>
+    </ul>
+  </section>
+
+  <section class="credits" aria-labelledby="credits-title">
+    <h2 id="credits-title">Credits</h2>
+    <p>Gemma 4 by Google under the Gemma Terms of Use, run through Ollama. html-to-image, React and Vite under MIT. Old Standard TT and UnifrakturMaguntia under the SIL Open Font License. Test photos from Wikimedia Commons, turned gray and placed on the cards:</p>
+    <table>
+      <tbody>
+        <tr><td><a href="https://commons.wikimedia.org/wiki/File:Old_jack-o-lanters_(54177345952).jpg">Old jack-o-lanterns</a>, Giulia Forsythe</td><td>CC BY 2.0</td></tr>
+        <tr><td><a href="https://commons.wikimedia.org/wiki/File:Two_pieces_of_burnt_toast.jpg">Two pieces of burnt toast</a>, Sheep purple</td><td>CC BY 2.0</td></tr>
+        <tr><td><a href="https://commons.wikimedia.org/wiki/File:Worn-out_torn_shabby_hole-ridden_grey_canvas_shoes_light_soles_dirty_used_broken_laces_Utg%C3%A5tte_slitte_hullete_fillete_gr%C3%A5_t%C3%B8ysko_med_lette_gr%C3%A5_plasts%C3%A5ler_s%C3%A5ler_brukte_skitne_%C3%B8delagte_skolisser_Norway_2025_IMG_1772.jpg">Worn-out grey canvas shoes</a>, Wolfmann</td><td>CC BY 4.0</td></tr>
+        <tr><td><a href="https://commons.wikimedia.org/wiki/File:Homebase_Succulent_Rescue_Attempt_(4526722760).jpg">Homebase succulent rescue attempt</a>, stephen boisvert</td><td>CC BY 2.0</td></tr>
+        <tr><td><a href="https://commons.wikimedia.org/wiki/File:Close-up_of_a_burnt_light_bulb_on_the_ground.jpg">Burnt light bulb on the ground</a>, Shixart1985</td><td>CC BY 2.0</td></tr>
+        <tr><td><a href="https://commons.wikimedia.org/wiki/File:MyPhone_my27_front_panel.jpg">MyPhone my27 front panel</a>, JGBlue1509</td><td>CC BY 4.0</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <footer>
+    Built by Nazar Boyko for the DEV Hacktoberfest Open-Source AI Challenge, Week 4: Ghost in the Machine, on October 31, 2026. MIT license. <a href="https://github.com/nazboyko/here-lies">Source on GitHub</a>.
+  </footer>
+</main>
+</body>
+</html>
