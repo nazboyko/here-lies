@@ -10,6 +10,8 @@ Point it at a cat, a person or a healthy plant and it refuses: "Still alive. Giv
 
 Landing page: https://nazboyko.github.io/here-lies/
 
+Read the story behind it on DEV: https://dev.to/nazar-boyko/here-lies-my-toaster-1nmm
+
 ## Run it
 
 You need [Ollama](https://ollama.com), Go 1.26 and Node 20 or newer.
